@@ -1,0 +1,62 @@
+/* 초기화태그 */
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+img{border: 0;}
+.left{float: left;}
+.right{float: right;}
+.clear{clear: both;}
+.center{margin: 0 auto;}
+/* w1600px PC 기준 center width:1000px, 62.5%이지만 하단 work컨텐츠 레이아웃이 망가져서 1% 높임 */
+
+#lnb{width:100%; height: 80px; background: #fff; position: fixed; z-index: 999; border-bottom: 1px solid #f5f6f8; top: 0; font-family: 'PT Serif', serif;}
+#lnb>.center{width: 68%; height: 80px;  padding-top: 10px; box-sizing: border-box;background: #fff;}
+#lnb h1{float: left; margin-left: 3%;}
+#lnb h1 a{display:block; width: 100%; height: 80px; text-align: center; z-index: 998;}
+#lnb h1 img{max-width: 100%; height: 50px;}
+#lnb ul{float: right; width: 80%;}
+#lnb li{float: right; width: 20%; height: 50px; margin-right: 4.364%; text-align: center; position: relative;}
+#lnb li:first-of-type{margin-right: 0;}
+#lnb li>div{display:none; position:absolute; width: 15px; height: 50px; transform:rotate(45deg); background: rgba(170, 207, 208, 0.5); left: 46%; top:3px; z-index: 100;}
+#lnb li:hover>div{display: block;}
+#lnb li a{width: 100%; color: #666; line-height: 50px; font-size: 1.5em; position:absolute;z-index: 999; right: 0;}
+
+
+#footer{width:100%; background: #f5f6f8; position: relative; box-sizing: border-box; font-family: 'PT Serif', serif}
+#footer>a{position:absolute; top:-35px; left:50%; transform:translateX(-50%); display:block; width:40px; height: 65px; border-radius: 7px; background: #a9cfd0; text-align: center; line-height: 55px;}
+#footer address{font-style: normal; text-align: center;}
+
+@media screen and (min-width:250px){
+    .center{max-width:360px; width:100%; }
+
+    body{font-size: 12px;}
+    #lnb>.center{width: 100%;}
+    #lnb ul{width: 70%;}
+    #lnb li{width: 30%;}
+    #lnb li>div{width: 10px;}
+    
+    #footer{height:130px; padding-top: 70px;}
+    #footer>a{width: 35px; height: 55px; border-radius: 6px; top: -25px;}
+}
+
+@media screen and (min-width:560px){
+    #lnb{height: 60px;}
+    #lnb>.center{height: 60px; padding-top:0;}
+    #lnb h1 a{height: 60px;}
+    .center{max-width: 640px;}
+    body{font-size: 13px;}
+}
+
+/* @media screen and (min-width:600px){
+    .center{max-width: 768px; width: 100%;}
+    body{font-size: 14px;}
+} */
+
+@media screen and (min-width:900px){
+    #lnb{height: 80px; font-size: 14px;}
+    #lnb>.center{max-width:1000px; width: 68%; height: 80px; padding-top:10px;}
+    #lnb h1 a{height: 80px;}
+    .center{max-width: 1000px; width: 1000px;}
+    body{font-size: 16px;}
+    #footer{height: 200px;  padding-top: 100px;}
+}

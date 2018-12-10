@@ -1,0 +1,252 @@
+body{font-family: 'Nanum Myeongjo', serif; }
+#lnb li:last-child>div{ background: rgba(254, 214, 206, 0.5); display: block;}
+/* top 섹션 nav 높이 80*/
+#top_s{ width:100%; padding-top: 90px; box-sizing: border-box; background: #f5f6f8; }
+
+/* top 섹션 bookblock */
+#top_s .bb-custom-wrapper{ position: relative;}
+#top_s .bg_ts{width:100%; height: 100%;}
+#top_s .bb-item{height: 100%;}
+
+/* tops content1 */
+#top_s .bb-item>.left{width: 50%; height: auto;}
+#top_s .bb-item>.right{width: 50%; height: auto;}
+#top_s .bb-item>h1{position: absolute; color: #333; z-index: 997; text-align: center; font-family: 'Noto Serif', serif; font-weight: normal;}
+
+/* tops content2 */
+#top_s .logo_mean{display: none; position:absolute;font-weight:bold; font-size:0.8em;  box-sizing: border-box; line-height: 20px; color: #555; background:#fff;border: 1px solid #eee; top: 7%; z-index: 998;}
+#top_s .logo_mean>span{display:block; font-size: 1.5em; margin-bottom: 10px; color: #333;}
+#top_s .logo_mean>img{height: 60px;}
+#top_s .profile{ text-align: left; font-family: 'Nanum Myeongjo', serif; font-weight: bold; box-sizing: border-box;}
+#top_s .profile>h4:first-child{margin-left: 10px; color: #666;}
+#top_s .profile .photo{background-image: url(../img/my_fish.png); background-size: cover; margin-bottom: 20px; cursor: pointer;}
+
+#top_s .line{background: #fff;}
+#top_s .plant{position: absolute; bottom: 0; right: 15px; z-index: 500;}
+#top_s .skills{ text-align: right; font-family: 'Nanum Myeongjo', serif; font-weight: bold; line-height: 30px; overflow: hidden; background: #aacfd0;box-sizing: border-box;}
+#top_s .skills h2{ color: #fff;}
+#top_s .white_bot{ background-image: url(../img/bottom.png);}
+
+/* tops content3 */
+#top_s .spec{width: 100%;box-sizing: border-box; font-family: 'Nanum Myeongjo', serif; font-weight: bold; font-size:0.8em; }
+#top_s .spec span{display:block; height:15px;font-size: 1.2em; font-weight: bold;  margin-right: 35px;}
+#top_s .spec h2{position:absolute;}
+#top_s .spec .ct{ position: absolute;}
+#top_s .spec img:first-of-type{position:absolute; }
+#top_s .spec img{display: inline-block;}
+#top_s .bar{display:inline-block; background: #f2f2f2;}
+#top_s .gauge{ width:0; background: #fed6ce;}
+#top_s .gauge1{ width:0; background: #fed6ce;}
+#top_s .gauge2{width:0; background: #fed6ce;}
+#top_s .spec .line{border-bottom:1px solid #363636;}
+#top_s .spec .ct .gage{width: 38px; background: #aacfd0;float: left;}
+#top_s .spec .ct p{ box-sizing: border-box;}
+#top_s .spec .ct b:last-of-type{margin-right: 0;}
+/* ********************************left******************************* */
+#top_s .right .vision{border-left: 1px solid #777777; box-sizing: border-box; font-family: 'Nanum Myeongjo', serif; font-weight: 600; position:relative; }
+#top_s .vision h2{ position:absolute; font-size: 1.3em;}
+#top_s .vision p{position: absolute;  width:100%; text-align: center; }
+/* bot 섹션 */
+#bot_s{ box-sizing: border-box;}
+#bot_s h2{width: 89px; height: 35px; border: 5px solid #aacfd0; margin:0 auto; text-align: center; line-height: 35px; font-size: 1.5em; font-weight: bold;}
+
+#bot_s .center a{display:block; overflow: hidden;}
+#bot_s .center a img{width:100%; height: 100%;}
+#bot_s .center>div:nth-of-type(2)>.work>img{width: 100%;}
+.skills+h2.right{text-align: right;}
+
+@media screen and (min-width:250px){
+/*
+    .center{max-width:360px; width:100%;} */
+    #top_s{height: 380px; }
+    #top_s .bb-bookblock{max-width: 360px; height: 280px; width: 100%;}
+    #top_s .bb-item>h1{font-size:1.5em; top: 65px; right: 18.611%;}
+    #top_s .logo_mean{left:12%; font-size:0.8em; width:80%; height: 70%; padding: 2px; text-align: center;}
+    #top_s .logo_mean>img{height: 30px;}
+    #top_s .profile{width:180px; padding: 40px 8% 0; font-size: 0.8em; line-height: 16px;}
+    #top_s .profile .photo{width: 20%; height: 32px;}
+    #top_s .profile span{display: none;}
+    
+    #top_s .line{width: 40px; height: 4px; margin-bottom: 8px;}
+    #top_s .plant{height: 200px; right: 0; bottom: 15px;}
+    #top_s .skills{width: 180px; height: 280px; padding-top: 60px;}
+    #top_s .skills h2{width: 50px; height: 38px; font-size: 1.5em; margin-left: 70px; margin-bottom: 130px; }
+    #top_s .white_bot{width: 180px; height: 60px;}
+
+    #top_s .spec{height: 280px; padding: 20px;}
+    #top_s .spec span{margin-bottom: 5px;}
+    #top_s .spec h2{top: 10px; left: 70px;}
+    #top_s .spec .ct{width: 150px; height: auto; left: 15px; top: 35px;}
+    #top_s .spec img:first-of-type{height: 43px; right: 0; top: 5px;}
+    #top_s .spec img{height: 15px; margin-right: 3px;}
+    #top_s .bar{width: 120px; height: 15px;}
+    #top_s .gauge{height: 15px;}
+    #top_s .gauge1{height: 15px;}
+    #top_s .gauge2{height: 15px;}
+
+    #top_s .spec .line{width: 93%; height: 10px; margin-bottom: 5px;}
+    #top_s .spec .ct .gage{width: 11.111%; height: 30px; margin-left: 13.889%;}
+    #top_s .spec .ct .gage1{height: 18px;}
+    #top_s .spec .ct .gage2{height: 24px;}
+    #top_s .spec .ct p{padding-top: 0; width: 160px; margin-left: 13px; margin-bottom: 3px;}
+    #top_s .spec .ct b{margin-right: 10px;}
+    
+    #top_s .right .vision{width: 180px; height: 280px;}
+    #top_s .vision h2{top: 10px; right: 70px; }
+    #top_s .vision p{top: 120px; width: 100%; font-size: 0.9em;}
+
+    #bot_s {height:800px; padding-top: 25px;}
+    #bot_s h2{margin-bottom: 25px;}
+    #bot_s .center{height: auto;}
+    #bot_s .center>div{width: 100%; padding: 0 10px; box-sizing: border-box;}
+    #bot_s .work{width: 45.2%; height: 144px;}
+    #bot_s .center>div:nth-of-type(1)>.work:nth-of-type(1){margin: 0 0 15px 0;}
+    #bot_s .work_l{width:50%; height: 306px; margin-right: 0; margin-bottom: 15px;}
+    #bot_s .work_w{width: 100%; height: auto; margin-bottom: 10px;}
+    #bot_s .work_m{width: 50%; height: 144px;}
+    #bot_s .center>div:nth-of-type(2)>.work{margin-left: 15px;}
+
+    .bb-custom-wrapper nav a{
+        color: #333;
+        background: rgba(209, 209, 209, 0.493);
+        width: 38px; height: 38px;}
+
+    .bb-custom-icon::before{line-height: 38px;}
+}
+
+/* mobile_landscape  --> tablet*/
+@media screen and (min-width:560px){
+    #top_s{height: 440px; padding-top: 70px;}
+    #top_s .bb-bookblock{max-width: 560px; height: 360px; width: 100%;}
+    #top_s .bb-item>h1{top: 85px;right: 20%;}
+    #top_s .logo_mean{left:10%; font-size:0.8em; width:60%; height: 55%; padding: 2px; text-align: left; padding: 10px;}
+    #top_s .logo_mean>img{height: 40px;}
+    #top_s .profile{width: 280px; padding: 100px 8% 0;}
+    #top_s .profile .photo{height: 45px;}
+    
+    #top_s .plant{height: 300px;}
+    #top_s .skills{width: 280px; height: 360px; padding-top:60px;}
+    #top_s .skills h2{width:80px; height:40px; font-size: 1.8em; margin-left: 100px; margin-bottom: 180px;}
+    #top_s .white_bot{width: 280px; height: 80px;}
+
+    #top_s .spec{height: 360px;}
+    #top_s .spec span{margin-bottom: 10px;}
+    #top_s .spec h2{top: 20px; left: 100px;}
+    #top_s .spec .ct{width: 200px; top: 60px; left: 40px;}
+    #top_s .spec img:first-of-type{right: 20px;}
+    #top_s .bar{width: 160px;}
+
+    #top_s .spec .line{margin-bottom: 10px;}
+    #top_s .spec .ct p{width: 200px; margin-left: 25px; margin-bottom: 5px;}
+    #top_s .spec .ct b{margin-right: 20px;}
+
+    #top_s .right .vision{width: 280px; height: 360px;}
+    #top_s .vision h2{top: 20px; right: 100px;}
+    #top_s .vision p{top: 160px;}
+
+    #bot_s{height: 450px;}
+    #bot_s .center>div{width: 50%;}
+    #bot_s .work_m{width: 48%;}
+
+    .bb-custom-wrapper nav a{
+        color: #fff;
+        background:#fed6ce;
+        width: 30px; height: 30px;}
+    .bb-custom-icon::before{line-height: 30px;}
+}
+
+/* @media screen and (min-width:600px){
+    /*  #wrap{max-width: 768px;}
+    .center{max-width: 768px; width: 100%;}
+    #top_s{height:590px;}
+    #top_s .bb-bookblock{max-width: 768px; height: 490px;}
+    #top_s .bb-item>h1{font-size: 2.0em; top: 120px; right: 20%;}
+    
+    #top_s .profile{width: 100%; padding: 190px 8% 0; font-size: 0.8em; line-height: 18px;}
+    #top_s .profile .photo{width:30%; height: 100px;}
+
+    #top_s .line{width:77px; height: 7px; margin-bottom: 11px;}
+    #top_s .plant{height: 400px;}
+    #top_s .skills{width: 100%; height: 490px; padding-top: 90px;}
+    #top_s .skills h2{width:100px; height:40px; font-size: 2.0em; margin-left:140px; margin-bottom: 300px;}
+    #top_s .white_bot{width: 100%;height: 120px;}
+
+    #top_s .spec{height: 490px; padding: 20px;}
+    #top_s .spec span{margin-bottom: 10px;}
+    #top_s .spec h2{top: 40px; left: 150px;}
+    #top_s .spec .ct{width: 300px; left: 60px; top: 120px;}
+    #top_s .spec img:first-of-type{height: 60px; right: 60px; top: 5px;}
+    #top_s .spec img{height: 20px; margin-right: 5px;}
+    #top_s .bar{width: 230px; height: 20px;}
+    #top_s .gauge{height: 20px;}
+    #top_s .gauge1{height: 20px;}
+    #top_s .gauge2{height: 20px;}
+    #top_s .spec .line{width:80%; height:20px; margin-bottom: 10px;}
+    #top_s .spec .ct .gage{height: 60px; margin-left: 12%;}
+    #top_s .spec .ct .gage1{height: 33px;}
+    #top_s .spec .ct .gage2{height: 46px;}
+    #top_s .spec .ct p{padding-top:20px; margin-left: 45px; margin-bottom: 5px;}
+    #top_s .spec .ct b{margin-right: 54px;}
+    #top_s .right .vision{width: 384px; height: 490px;}
+    #top_s .vision h2{top: 40px; right: 160px;}
+    #top_s .vision p{font-size: 1.0em; top: 230px;}
+
+    #bot_s{height:500px;}
+    #bot_s h2{margin-bottom: 30px;}
+    #bot_s .center>div{padding: 0x; width: 50%;}
+    #bot_s .work{width: 45.2%;}
+    #bot_s .center>div:nth-of-type(1)>.work:nth-of-type(1){margin: 0 5px 5px 0;}
+    #bot_s .work_l{width: 52%; height: 365px;}
+    #bot_s .work_w{width: 100%;}
+    #bot_s .work_m{width: 50%; height:auto; float: left;}
+    #bot_s .center>div:nth-of-type(2)>.work{width: 45.2%; margin-left: 5px; float: right;}
+    margin-right: 25px; 
+}*/
+
+@media screen and (min-width:900px){
+    #top_s{height:745px; padding-top: 90px;}
+    #top_s .bb-bookblock{max-width: 1600px; height: 642px; width:1000px;}
+    #top_s .bb-item>h1{font-size: 2.3em; top: 155px; right: 200px;}
+    #top_s .logo_mean{font-size:0.8em; width:40%; height: 40%; padding: 30px; left:7%;}
+    #top_s .logo_mean>img{height: 60px;}
+    #top_s .profile{width: 500px; padding: 300px 8% 0; font-size: 0.8em; line-height: 20px;}
+    #top_s .profile .photo{width: 100px; height: 100px;}
+    #top_s .profile span{display: inline-block; width: 50px; margin-right: 25px;}
+
+    #top_s .plant{height: 520px; }
+    #top_s .skills{width: 500px; height: 642px; padding-top: 120px;}
+    #top_s .skills h2{width: 106px; font-size: 2.3em; margin-left: 200px; margin-bottom: 352px;}
+    #top_s .white_bot{width:500px; height: 130px;}
+
+    #top_s .spec{ height:642px; padding: 40px; }
+    #top_s .spec span{ margin-bottom: 15px;}
+    #top_s .spec h2{ top: 50px; left: 210px;}
+    #top_s .spec .ct{width: 350px; height: 388px;  left: 80px; top: 124px; }
+    #top_s .spec img:first-of-type{height: 86px; right: 23px; top: 0;}
+    #top_s .spec img{ height: 25px;}
+    #top_s .bar{width: 250px; height: 23px;}
+    #top_s .gauge{ height: 23px;}
+    #top_s .gauge1{ height: 23px;}
+    #top_s .gauge2{height: 23px; }
+    #top_s .spec .line{width: 320px; height: 30px; margin-bottom: 20px;}
+    #top_s .spec .ct .gage{ height:63px; margin-left: 43px; }
+    #top_s .spec .ct .gage1{height: 30px;}
+    #top_s .spec .ct .gage2{height: 40px;}
+    #top_s .spec .ct p{padding-top:20px; width: 200px; margin-left:45px; margin-bottom: 10px;}
+    #top_s .spec .ct b{margin-right: 45px;}
+
+    #top_s .right .vision{width: 500px; height: 642px;}
+    #top_s .vision h2{top:50px; right: 230px;}
+    #top_s .vision p{font-size: 1.1em;top:300px;}
+
+    #bot_s{height: 660px; padding-top: 50px;}
+    #bot_s .center>div{padding: 0;}
+    #bot_s .center{max-width:1000px; width:1000px; height: 473px;}
+    #bot_s h2{margin-bottom: 45px; }
+    #bot_s .work{width: 226px; height: 224px;}
+    #bot_s .center>div:nth-of-type(1)>.work:nth-of-type(1){margin: 0 5px 25px 0;}
+    #bot_s .work_l{width: 236px; height: 473px; margin-right: 13px; margin-bottom: 0;}
+    #bot_s .work_w{width: 489px; height: 224px; margin-bottom: 25px;}
+    #bot_s .work_m{width: 238px; height: 224px;}
+    #bot_s .center>div:nth-of-type(2)>.work{width: 227px; float: left; margin:0 20px 0 13px;}
+}

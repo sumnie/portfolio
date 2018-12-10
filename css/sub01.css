@@ -1,0 +1,121 @@
+body{font-family: 'Nanum Gothic', sans-serif;}
+#lnb li:nth-child(2)>div{ background: rgba(254, 214, 206, 0.5);display: block;}
+#section{width:100%; padding-top: 80px; box-sizing: border-box;}
+.line{ height: 5px; background: #fff; margin: 0 auto; box-sizing: border-box; position: relative;}
+.bar{height: 5px; background: #aacfd0; border-radius: 20%; position: absolute; left: 0;}
+
+.first{font-weight: bold;}
+
+/* .black hover넣음 */
+.black{display:block !important; width: 100%; height:98.5%; background: rgba(0, 0, 0, 0.5); position: absolute;z-index: 999; transform:scale(1,0); transform-origin:top; transition: transform .8s;}
+.black a{display:block; font-family: 'Nanum Gothic', sans-serif;text-align: center; color: #fff; font-weight: bold; position: absolute; top: 50%; left: 50%; transform: translateX(-50%);
+  /****/
+  opacity: 0; transition: opacity .8s .15s;}
+
+.black a:first-child{margin-bottom:70px; top: 20%;}
+.tile:hover .black{transform: scale(1,1)}
+.tile:hover a{opacity: 1;}
+/********hover에 opacity:1; transition-duration: 0.8s; transition 넣는 게 아니라 해당 태그에 넣어줘야함. 아니면 hover 마우스에서 땔 땐 동작안됌*문제수정*************************/
+
+/****************************************************************jquery css**************************************************************************************************/
+#portfolio {  
+      margin: 1.0rem 0;
+      -webkit-column-count: 3; 
+      -moz-column-count: 3;
+      column-count: 3;
+      -webkit-column-gap: 1rem;
+      -moz-column-gap: 1rem;
+      column-gap: 1rem;
+      -webkit-column-width: 33.33333333333333%;
+      -moz-column-width: 33.33333333333333%;
+      column-width: 33.33333333333333%;
+  }
+  .tile { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: all 350ms ease;
+      transition: all 350ms ease;
+      margin-bottom: 1rem;
+  }
+  
+  .scale-anm {
+    transform: scale(1);
+  }
+  
+  
+  /* p{ 
+    padding:10px; 
+    border-bottom: 1px #ccc dotted; 
+    text-decoration: none; 
+    font-family: lato; 
+    text-transform:uppercase; 
+    font-size: 12px; 
+    color: #333; 
+    display:block; 
+    float:left;
+  }
+  
+  p:hover { 
+    cursor:pointer; 
+    background: #333; 
+    color:#eee; } */
+  
+  .tile img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+
+    
+  }
+  .tile{position: relative;}
+
+
+  .toolbar{text-align: center; height: 50px;}
+  .btn {
+    font-family: 'PT Serif', serif;
+      font-size: 1.3em;
+      cursor: pointer;
+      display: inline-block;
+      line-height: normal;
+      padding: 5px 1rem;
+      margin: 0;
+      height: 50px;
+      vertical-align: middle;
+      -webkit-appearance: none;
+      color: #555;
+      border: 0 solid;
+      background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .btn:hover {
+    text-decoration: none;
+  }
+  
+  .btn:focus {
+    outline: none;
+    border-color: var(--darken-2);
+    box-shadow: 0 0 0 3px var(--darken-3);
+  }
+  
+  ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  @media screen and (min-width:250px){
+    .line{width: 210px; padding-top: 20px; margin-bottom: 0;}
+    .bar{width:20px;}
+    .black a{line-height: 14px; padding: 0.15em 1em; border: 1px solid #fff; }
+  }
+
+  @media screen and (min-width:600px){
+    .line{width: 250px;}
+    .bar{width: 40px;}
+    .black a{line-height: 36px; padding: 0.15em 1em;border: 2px solid #fff;  }
+  }
+
+  @media screen and (min-width:900px){
+    .line{width: 300px; padding-top: 30px; margin-bottom: 10px;}
+    .bar{width: 60px;}
+    .black a{line-height: 48px; padding: 0.15em 1em;border: 3px solid #fff;  }
+  }
